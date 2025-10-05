@@ -16,12 +16,12 @@ $page_title = 'Add Notice';
             <div class="create-notice">
         <div class="">
             <h1 class="create-notice-title">Create New Activity</h1>
-            <form action="" method="post">
+            <form action="" >
                 
                 <!-- Title -->
                 <div class="form-group mt-3">
                     <label>Title</label>
-                    <input type="text" name="title" placeholder="Notice Title" required>
+                    <input type="text" name="title" placeholder="Activity Title" required>
                 </div>
 
                 <!-- Type -->

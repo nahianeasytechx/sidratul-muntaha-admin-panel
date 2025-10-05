@@ -285,12 +285,17 @@ button {
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    
 }
 
 .all-notice .page-header h1 {
     margin: 0;
     color: #333;
     font-weight: 700;
+}
+.all-notice .page-header button{
+margin-left: auto;
 }
 
 .all-notice .breadcrumb {
@@ -582,6 +587,227 @@ button {
     background-size: 16px;
 }
 /* Gallery section End   */
+
+/* Slider Managment start   */
+.select2-container--bootstrap-5 .select2-selection {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    min-height: 45px;
+    padding: 0.375rem 0.75rem;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    line-height: 2;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown {
+    border-radius: 10px;
+    border: 2px solid #667eea;
+}
+
+.select2-container--bootstrap-5 .select2-results__option--highlighted {
+    background-color: #667eea;
+}
+/* Slider Managment End   */
+/* Settings Start    */
+.settings .page-header {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings .page-header h1 {
+    margin: 0;
+    color: #333;
+    font-weight: 700;
+}
+
+.settings .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.settings .icon-box {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.settings .settings-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings .section-title {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.settings .profile-photo-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.settings .profile-photo-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1rem;
+}
+
+.settings .profile-photo {
+    width: 200px;
+    height: 200px;
+   object-fit: contain;
+    border: 5px solid #667eea;
+
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.settings .photo-upload-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.settings .photo-upload-btn:hover {
+    transform: scale(1.1);
+}
+
+.settings .photo-upload-btn i {
+    color: white;
+    font-size: 1rem;
+}
+
+.settings .photo-input {
+    display: none;
+}
+
+.settings .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.settings .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+}
+
+.settings .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.settings .input-group-text {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.settings .btn-save {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.settings .btn-save:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.settings .btn-cancel {
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.settings .btn-cancel:hover {
+    background: #5a6268;
+    color: white;
+}
+
+.settings .info-badge {
+    background: #f0f2ff;
+    color: #667eea;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.settings .password-strength {
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.settings .password-strength-bar {
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.settings .password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.settings .alert-info {
+    background: #e7f3ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #004085;
+}
+/* Settings end    */
+
 /* More spacing on small devices */
 @media (max-width: 991px) {
     .stat-card-title {

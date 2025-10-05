@@ -91,13 +91,7 @@ $page_title = 'Dashboard'; // Set the page title
         <p class="quick-action-title">Add Activity</p>
       </button>
 
-      <!-- Edit About -->
-      <button class="quick-action-card" onclick="window.location.href='edit-about.php'">
-        <div class="quick-action-icon edit-about">
-          <i class="fa-solid fa-pen-to-square"></i>
-        </div>
-        <p class="quick-action-title">Edit About</p>
-      </button>
+
     </div>
   </div>
 </div>
