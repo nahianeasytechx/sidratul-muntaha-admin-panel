@@ -15,7 +15,7 @@ button {
 /* Unified Stat Cards for All Pages */
 .stats-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* exactly 4 per row */
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -146,6 +146,7 @@ button {
     margin: 0 auto 1rem;
     font-size: 1.8rem;
     color: white;
+    padding: 26px;
 }
 
 /* Quick Action Icon Backgrounds */
@@ -218,6 +219,123 @@ button {
     background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 188, 188, 1) 55%);
     border-radius: 20px;
 }
+
+
+/* === Tables Section === */
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.g-4 > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.table-header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.table-responsive {
+  flex: 1;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  color: #4a5568;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody td {
+  color: #2d3748;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.badge.bg-success {
+  background-color: #10b981 !important;
+}
+
+.badge.bg-warning {
+  background-color: #f59e0b !important;
+}
+
+.badge.bg-danger {
+  background-color: #ef4444 !important;
+}
+
+/* Table Button Container */
+.table-card > div:last-child {
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  margin: 0 !important;
+}
+
+.table-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white !important;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.table-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  color: white !important;
+}
+.badge-text{
+    font-size: 12px;
+}
+
 
 /* Create Notice Page Styling */
 .create-notice {
@@ -808,6 +926,222 @@ margin-left: auto;
 }
 /* Settings end    */
 
+/* View Notice Page start  */
+.view-notice .card {
+    border: none;
+}
+
+.view-notice .badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.view-notice .content-text {
+    line-height: 1.8;
+    color: #333;
+}
+
+.view-notice .content-text p {
+    margin-bottom: 1rem;
+}
+
+.view-notice .content-text ul {
+    padding-left: 1.5rem;
+}
+
+.view-notice .content-text li {
+    margin-bottom: 0.5rem;
+}
+
+.view-notice .info-box {
+    transition: all 0.3s ease;
+}
+
+.view-notice .info-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.view-notice .attachment-item {
+    transition: all 0.3s ease;
+}
+
+.view-notice .attachment-item:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.view-notice .contact-section {
+    border-left: 4px solid #0d6efd;
+}
+/* View Notice Page end */
+
+/* Edit activity page css start */
+.edit-activity .card {
+    border: none;
+}
+
+.edit-activity .card-header {
+    border-bottom: 2px solid #e9ecef;
+}
+
+.edit-activity .form-label {
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.edit-activity .form-control,
+.edit-activity .form-select {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.625rem 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.edit-activity .form-control:focus,
+.edit-activity .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.edit-activity .section-title-input {
+    border: 1px dashed #cbd5e0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.edit-activity .section-title-input:focus {
+    border-style: solid;
+    border-color: #667eea;
+}
+
+.edit-activity .item-row {
+    transition: all 0.3s ease;
+}
+
+.edit-activity .item-row:hover {
+    transform: translateX(5px);
+}
+
+.edit-activity .file-item {
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.edit-activity .file-item:hover {
+    background-color: #e9ecef;
+}
+
+.edit-activity .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+}
+
+.edit-activity .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.edit-activity .btn-success {
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    border: none;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+}
+
+.edit-activity .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
+}
+
+.edit-activity .btn-outline-secondary {
+    border: 2px solid #a0aec0;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.edit-activity .btn-outline-secondary:hover {
+    background: #a0aec0;
+    color: white;
+}
+
+.edit-activity .btn-outline-danger {
+    border: 2px solid #f56565;
+    color: #f56565;
+    font-weight: 500;
+}
+
+.edit-activity .btn-outline-danger:hover {
+    background: #f56565;
+    color: white;
+}
+
+.edit-activity .btn-outline-primary {
+    border: 2px solid #667eea;
+    color: #667eea;
+    font-weight: 500;
+}
+
+.edit-activity .btn-outline-primary:hover {
+    background: #667eea;
+    color: white;
+}
+
+.edit-activity textarea {
+    min-height: 200px;
+}
+
+.edit-activity .progress {
+    border-radius: 10px;
+    background-color: #e2e8f0;
+}
+
+.edit-activity .progress-bar {
+    border-radius: 10px;
+}
+
+.edit-activity .dynamic-section {
+    animation: slideIn 0.3s ease-out;
+}
+
+.edit-activity .image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.edit-activity .image-item img {
+    transition: transform 0.3s ease;
+}
+
+.edit-activity .image-item:hover img {
+    transform: scale(1.05);
+}
+
+.edit-activity .image-item .btn-danger {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.edit-activity .image-item:hover .btn-danger {
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Edit activity page css end  */
 /* More spacing on small devices */
 @media (max-width: 991px) {
     .stat-card-title {
@@ -880,6 +1214,213 @@ margin-left: auto;
 
     .all-notice .action-buttons {
         justify-content: center;
+    }
+}
+
+/* Donation List start  */
+
+.donation-list .table-header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.donation-list .table-header th {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding: 1rem 0.75rem;
+    border: none;
+    white-space: nowrap;
+}
+
+.donation-list .table tbody td {
+    padding: 0.875rem 0.75rem;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.donation-list .table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.donation-list .table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.donation-list .table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.donation-list .action-buttons {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.donation-list .action-buttons .btn {
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.donation-list .action-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.donation-list .badge {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.donation-list code {
+    background-color: #f1f5f9;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    color: #475569;
+    font-size: 0.8rem;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+}
+
+.donation-list .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.donation-list .table-responsive {
+    border-radius: 12px;
+}
+
+/* Improved spacing for stats */
+.donation-list .stat-card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Better filter card spacing */
+.donation-list .filter-card {
+    padding: 1.25rem 1.5rem;
+}
+
+.donation-list .filter-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+/* Stat Icon Colors - Customize these */
+.donation-list .stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.donation-list .stat-icon.total {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.donation-list .stat-icon.active {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.donation-list .stat-icon.expired {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.donation-list .stat-icon.draft {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    color: white;
+}
+
+/* Page Header Icon */
+.donation-list .icon-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Action Button Icon Colors - Already handled by Bootstrap classes */
+.donation-list .btn-info {
+    background: linear-gradient(135deg, #0dcaf0 0%, #0aa2c0 100%);
+    border: none;
+    color: white;
+}
+
+.donation-list .btn-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    border: none;
+    color: white;
+}
+
+.donation-list .btn-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    border: none;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .donation-list .action-buttons {
+        gap: 0.25rem;
+    }
+    
+    .donation-list .action-buttons .btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .donation-list .table-header th {
+        font-size: 0.75rem;
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .donation-list .table tbody td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Donation List end  */
+@media print {
+    .page-header,
+    .view-notice .d-flex.gap-2,
+    .view-notice .d-flex.justify-content-between:last-child,
+    .sidebar,
+    .navbar {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 

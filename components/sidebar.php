@@ -69,6 +69,12 @@
       </a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="donation-history.php">
+        <span class="menu-title">Donation List</span>
+        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="settings.php">
         <span class="menu-title">Settings</span>
         <i class="mdi mdi-cog menu-icon"></i>

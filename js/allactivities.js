@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="action-buttons">
                         <button class="btn-action btn-view" title="View Details" onclick="viewActivity(${activity.id})">
-                            <i class="fa-solid fa-eye"></i>
+                          <a href="view-activity.php">  <i class="fa-solid fa-eye"></i></a>
                         </button>
                         ${activity.status !== 'completed' ? `
                         <button class="btn-action btn-edit" title="Edit" onclick="editActivity(${activity.id})">

@@ -139,7 +139,7 @@
                     </div>
                     <div class="action-buttons">
                         <button class="btn-action btn-view" title="View Details" onclick="viewNotice(${notice.id})">
-                            <i class="fa-solid fa-eye"></i>
+                      <a href="view-notice.php">      <i class="fa-solid fa-eye"></i></a>
                         </button>
                         ${notice.status !== 'expired' ? `
                         <button class="btn-action btn-edit" title="Edit" onclick="editNotice(${notice.id})">

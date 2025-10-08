@@ -26,6 +26,8 @@
     <script src="js/gallery.js"></script>
     <script src="js/sliderManagement.js"></script>
     <script src="js/settings.js"></script>
+    <script src="js/editActivity.js"></script>
+    <script src="js/donationList.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Chart Scripts -->
