@@ -27,9 +27,9 @@ $page_title = 'Donation List';
                     </div>
                 </div>
 
-                <button class="btn btn-add-new" onclick="window.location.href='add-donation.php'">
+                <a class="btn btn-add-new" href='../donate.php' target="">
                     <i class="fa-solid fa-plus me-1"></i> Add New Donation
-                </button>
+                </a>
             </div>
         </div>
 
@@ -142,11 +142,11 @@ $page_title = 'Donation List';
                             <tr>
                                 <th style="width: 80px;">Serial No.</th>
                                 <th style="width: 150px;">Category</th>
-                                <th>Donor Name</th>
-                                <th style="width: 140px;">Phone</th>
-                                <th style="width: 120px;">Amount</th>
-                                <th style="width: 140px;">Transaction ID</th>
-                                <th class="text-center" style="width: 250px;">Actions</th>
+                                <th style="width: 200px;">Donor Name</th>
+                                <th style="width: 160px;">Phone</th>
+                                <th style="width: 140px;">Amount</th>
+                                <th style="width: 180px;">Transaction ID</th>
+                                <th style="width: 250px;">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -159,15 +159,41 @@ $page_title = 'Donation List';
                                 <td><code>TRX123456789</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(1)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(1)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(1)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Repeat similar structure for other rows -->
+
+
+
+                        <tbody>
+                            <tr>
+                                <td><strong>#001</strong></td>
+                                <td><span class="badge bg-primary">Education</span></td>
+                                <td>Md. Rahim Uddin</td>
+                                <td><small>+880 1712-345678</small></td>
+                                <td><strong>৳ 5,000</strong></td>
+                                <td><code>TRX123456789</code></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
+                                            <i class="fa-solid fa-eye me-1"></i>View
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
+                                            <i class="fa-solid fa-pen-to-square me-1"></i>Edit
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
+                                            <i class="fa-solid fa-trash me-1"></i>Delete
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -183,12 +209,10 @@ $page_title = 'Donation List';
                                         <button class="btn btn-sm btn-info" onclick="viewDonation(2)">
                                             <i class="fa-solid fa-eye me-1"></i>View
                                         </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(2)">
-                                            <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(2)">
-                                            <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        <a href="edit-donation.php"> <button class="btn btn-sm btn-warning" onclick="editDonation(2)">
+                                                <i class="fa-solid fa-pen-to-square me-1"></i>Edit
+                                            </button></a>
+                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(1)"><i class="fa-solid fa-trash me-1"></i>Delete</button>
                                     </div>
                                 </td>
                             </tr>
@@ -201,15 +225,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX456789123</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(3)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(3)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(3)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -222,15 +246,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX789456123</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(4)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(4)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(4)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -243,15 +267,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX321654987</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(5)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(5)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(5)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -264,15 +288,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX654321789</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(6)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(6)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(6)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -285,15 +309,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX147258369</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(7)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(7)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(7)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -306,15 +330,15 @@ $page_title = 'Donation List';
                                 <td><code>TRX963852741</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(8)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(8)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(8)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -327,61 +351,26 @@ $page_title = 'Donation List';
                                 <td><code>TRX852963147</code></td>
                                 <td>
                                     <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(9)">
+                                        <a href="view-donation.php?id=1" class="btn btn-sm btn-info">
                                             <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(9)">
+                                        </a>
+                                        <a href="edit-donation.php?id=1" class="btn btn-sm btn-warning">
                                             <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(9)">
+                                        </a>
+                                        <a href="#" onclick="deleteDonation(1); return false;" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><strong>#010</strong></td>
-                                <td><span class="badge bg-secondary">General</span></td>
-                                <td>Sabina Yasmin</td>
-                                <td><small>+880 1512-741852</small></td>
-                                <td><strong>৳ 6,000</strong></td>
-                                <td><code>TRX741852963</code></td>
-                                <td>
-                                    <div class="action-buttons">
-                                        <button class="btn btn-sm btn-info" onclick="viewDonation(10)">
-                                            <i class="fa-solid fa-eye me-1"></i>View
-                                        </button>
-                                        <button class="btn btn-sm btn-warning" onclick="editDonation(10)">
-                                            <i class="fa-solid fa-pen-to-square me-1"></i>Edit
-                                        </button>
-                                        <button class="btn btn-sm btn-danger" onclick="deleteDonation(10)">
-                                            <i class="fa-solid fa-trash me-1"></i>Delete
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-        <!-- Pagination -->
-        <nav class="mt-4">
-            <ul class="pagination pagination-custom justify-content-center mb-0">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1"><i class="fa-solid fa-chevron-left"></i></a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
-                </li>
-            </ul>
-        </nav>
+
     </div>
 </div>
 <!--------------------------->
@@ -389,19 +378,19 @@ $page_title = 'Donation List';
 <!--------------------------->
 
 <script>
-function viewDonation(id) {
-    window.location.href = 'view-donation.php?id=' + id;
-}
-
-function editDonation(id) {
-    window.location.href = 'edit-donation.php?id=' + id;
-}
-
-function deleteDonation(id) {
-    if (confirm('Are you sure you want to delete this donation record?')) {
-        alert('Donation #' + id + ' deleted successfully!');
+    function viewDonation(id) {
+        window.location.href = 'view-donation.php?id=' + id;
     }
-}
+
+    function editDonation(id) {
+        window.location.href = 'edit-donation.php?id=' + id;
+    }
+
+    function deleteDonation(id) {
+        if (confirm('Are you sure you want to delete this donation record?')) {
+            alert('Donation #' + id + ' deleted successfully!');
+        }
+    }
 </script>
 
 

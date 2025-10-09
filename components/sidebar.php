@@ -69,7 +69,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="donation-history.php">
+      <a class="nav-link" href="donation-list.php">
         <span class="menu-title">Donation List</span>
         <i class="mdi mdi-format-list-bulleted menu-icon"></i>
       </a>
