@@ -15,9 +15,7 @@ $page_title = 'View Activity'; // Set the page title
         <div class="page-header">
             <div class="w-100 d-flex flex-wrap justify-content-between align-items-center gap-3">
                 <div class="d-flex align-items-center gap-3">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-calendar-check"></i>
-                    </div>
+
                     <div>
                         <h1>View Activity</h1>
                         <nav aria-label="breadcrumb">
@@ -105,63 +103,7 @@ $page_title = 'View Activity'; // Set the page title
                     </div>
                 </div>
 
-                <!-- Activity Details Grid -->
-                <div class="row g-3 mb-4">
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-calendar-check text-primary me-2"></i>
-                                <strong>Event Date</strong>
-                            </div>
-                            <div class="ms-4">March 5, 2024</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-clock text-success me-2"></i>
-                                <strong>Time</strong>
-                            </div>
-                            <div class="ms-4">8:00 AM - 12:00 PM</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-map-marker-alt text-danger me-2"></i>
-                                <strong>Location</strong>
-                            </div>
-                            <div class="ms-4">Ramna Park, Dhaka</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-users text-info me-2"></i>
-                                <strong>Participants</strong>
-                            </div>
-                            <div class="ms-4">150 / 200 Registered</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-user-tie text-warning me-2"></i>
-                                <strong>Organizer</strong>
-                            </div>
-                            <div class="ms-4">Environmental Committee</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-tag text-secondary me-2"></i>
-                                <strong>Registration Fee</strong>
-                            </div>
-                            <div class="ms-4">Free</div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Attachments Section -->
                 <div class="attachments-section mb-4">

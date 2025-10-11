@@ -135,7 +135,7 @@ $page_title = 'Dashboard'; // Set the page title
         <p class="quick-action-title">Add Activity</p>
       </button>
       <!-- Add Activity -->
-      <button class="quick-action-card" onclick="window.location.href='add-activity.php'">
+      <button class="quick-action-card" onclick="window.location.href='../donate.php'">
         <div class="quick-action-icon add-activity">
           <i class="fa-solid fa-hand-holding-medical"></i>
         </div>
@@ -158,7 +158,7 @@ $page_title = 'Dashboard'; // Set the page title
               <table class="table table-bordered align-middle mb-0">
                 <thead>
                   <tr>
-                    <th>#</th>
+                    <th>SL</th>
                     <th>Title</th>
                     <th>Date</th>
                   </tr>
@@ -208,7 +208,7 @@ $page_title = 'Dashboard'; // Set the page title
               <table class="table table-bordered align-middle mb-0">
                 <thead>
                   <tr>
-                    <th>#</th>
+                    <th>SL</th>
                     <th>Donor</th>
                     <th>Amount</th>
                   </tr>
@@ -243,7 +243,7 @@ $page_title = 'Dashboard'; // Set the page title
               </table>
             </div>
             <div class="d-flex justify-content-end bg-white">
-              <a href="donation-history.php" class="table-btn">See All</a>
+              <a href="donation-list.php" class="table-btn">See All</a>
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ $page_title = 'Dashboard'; // Set the page title
               <table class="table table-bordered align-middle mb-0">
                 <thead>
                   <tr>
-                    <th>#</th>
+                    <th>SL</th>
                     <th>Title</th>
                     <th>Status</th>
                   </tr>

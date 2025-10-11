@@ -15,9 +15,6 @@ $page_title = 'View Notice'; // Set the page title
         <div class="page-header">
             <div class="w-100 d-flex flex-wrap justify-content-between align-items-center gap-3">
                 <div class="d-flex align-items-center gap-3">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-flag"></i>
-                    </div>
                     <div>
                         <h1>View Notice</h1>
                         <nav aria-label="breadcrumb">
@@ -202,7 +199,7 @@ $page_title = 'View Notice'; // Set the page title
                 <i class="fa-solid fa-print"></i> Print Notice
             </button>
             <div class="d-flex gap-2">
-                <button class="btn btn-outline-danger" onclick="if(confirm('Are you sure you want to delete this notice?')) window.location.href='all-notices.php'">
+                <button class="btn btn-outline-danger" onclick="if(confirm('Are you sure you want to delete this notice?')) window.location.href='all-notice.php'">
                     <i class="fa-solid fa-trash"></i> Delete
                 </button>
                 <button class="btn btn-primary" onclick="window.location.href='edit-notice.php?id=1'">

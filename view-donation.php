@@ -191,7 +191,7 @@ $previous_donations = [
         </div>
 
         <!-- Action Buttons -->
-        <div class="action-buttons-bottom">
+        <div class="action-buttons-bottom mt-4">
             <button class="btn-action btn-edit" onclick="window.location.href='edit-donation.php?id=<?php echo $donation_id; ?>'">
                 <i class="fa-solid fa-pen-to-square"></i>
                 Edit This Donation
