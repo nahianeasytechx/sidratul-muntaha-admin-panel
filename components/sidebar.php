@@ -69,10 +69,23 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="donation-list.php">
+      <a class="nav-link" data-bs-toggle="collapse" href="#donate" aria-expanded="false" aria-controls="notice">
         <span class="menu-title">Donation List</span>
         <i class="mdi mdi-format-list-bulleted menu-icon"></i>
       </a>
+      <div class="collapse" id="donate">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="donation-list.php">Donation List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-donation.php">Add Donation Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="all-donation.php">All Donation </a>
+          </li>
+        </ul>
+      </div>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="settings.php">

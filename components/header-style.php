@@ -1882,6 +1882,7 @@ margin-left: auto;
     border: none;
     color: white;
 }
+/* Add Donation Category   */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
